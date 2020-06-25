@@ -9,8 +9,6 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>LVL TTS demos</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
-
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -20,7 +18,7 @@
 
     <style>
       .bd-placeholder-img {
-        font-size: 1.125rem;
+            font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -65,10 +63,28 @@
     <h1>TTS audio files</h1>
     <p class="lead">This is a temporary webpage of the current state of TTS at LVL.</p>
   </div>
+ <!-- <div>
+    <h3>T 7 - Recipes for voices / Forskriftir að röddum.</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h5>Current</h5>
+      <p>This is the current status in June 2020.</p>
+      <p>Halló allir. Hvað er eiginlega að frétta?</p>
+      <audio controls>
+          <source src="lt/.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  -->
+  <div>
+    <h3>T13 - Parametric synthesis for Icelandic/Stikaðir talgervlar fyrir íslensku</h3>
+  </div>
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
-      <h4>Initial</h4>
+      <h5>Initial</h5>
       <p>Our initial training</p>
       <p>Halló allir. Hvað er eiginlega að frétta?</p>
       <audio controls>
@@ -77,7 +93,7 @@
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>Midpoint</h4>
+      <h5>Midpoint</h5>
       <p>more training</p>
       <p>Halló allir. Hvað er eiginlega að frétta?</p>
       <audio controls>
@@ -86,7 +102,7 @@
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>Current</h4>
+      <h5>Current</h5>
       <p>This is the current status in June 2020.</p>
       <p>Halló allir. Hvað er eiginlega að frétta?</p>
       <audio controls>
@@ -101,40 +117,119 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8">
-      <p>ég er gera ég vil læra ekki hvernig hvað að á get þetta líkar líka</p>
+    <div class="col-md-4">
+      <p>T7_M - ég er gera ég vil læra ekki hvernig hvað að á get þetta líkar líka</p>
+      <audio controls>
+          <source src="lt/demo-us-m-words.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="col-md-4">
+      <p>T7_M - ég vil læra</p>
+      <audio controls>
+              <source src="lt/T7_M/ég_vil_læra.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="col-md-4">
+      <p>T7_M - ég vil læra hvernig á að tala íslensku. Hvað á ég að gera og hvað get ég ekki gert. Er þetta líka eða líkar?</p>
+      <audio controls>
+          <source src="lt/demo-us-m.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <p>T7_F - ég er gera ég vil læra ekki hvernig hvað að á get þetta líkar líka</p>
+      <audio controls>
+          <source src="lt/demo-us-f-words.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="col-md-4">
+      <p>T7_F - ég vil læra</p>
+      <audio controls>
+          <source src="lt/T7_F/ég_vil_læra.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="col-md-4">
+      <p>T7_F - ég vil læra hvernig á að tala íslensku. Hvað á ég að gera og hvað get ég ekki gert. Er þetta líka eða líkar?</p>
+      <audio controls>
+          <source src="lt/demo-us-f.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <p>T13 - ég er gera ég vil læra ekki hvernig hvað að á get þetta líkar líka</p>
       <audio controls>
           <source src="lt/ég_er_gera_ég_vil_læra_Ekki_hvernig_hvað_að_á_get_þetta_líkar_líka.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <p>ég vil læra</p>
+      <p>T13 - ég vil læra</p>
       <audio controls>
           <source src="lt/ég_vil_læra.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
   </div>
+  <div>
+    <p>The following audio files are ordered like this:
+        <ul>
+            <li/>T7_M
+            <li/>T7_F
+            <li/>T13
+        </ul>
+    </p>
+  </div>
   <div class="row">
     <div class="col-md-4">
-      <h4>ég</h4>
+      <h5>ég</h5>
       <audio controls>
-          <source src="lt/ég.wav" type="audio/wav">
+          <source src="lt/T7_M/ég.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/ég.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/ég.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>er</h4>
+      <h5>er</h5>
       <audio controls>
-          <source src="lt/er.wav" type="audio/wav">
+          <source src="lt/T7_M/er.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/er.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/er.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>gera</h4>
+      <h5>gera</h5>
       <audio controls>
-          <source src="lt/gera.wav" type="audio/wav">
+          <source src="lt/T7_M/gera.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/gera.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/gera.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
@@ -142,24 +237,48 @@
   <hr>
   <div class="row">
     <div class="col-md-4">
-      <h4>vil</h4>
+      <h5>vil</h5>
       <audio controls>
-          <source src="lt/vil.wav" type="audio/wav">
+          <source src="lt/T7_M/vil.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/vil.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/vil.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
   <hr>
     <div class="col-md-4">
-      <h4>læra</h4>
+      <h5>læra</h5>
       <audio controls>
-          <source src="lt/læra.wav" type="audio/wav">
+          <source src="lt/T7_M/læra.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/læra.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/læra.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>ekki</h4>
+      <h5>ekki</h5>
       <audio controls>
-          <source src="lt/ekki.wav" type="audio/wav">
+          <source src="lt/T7_M/ekki.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/ekki.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/ekki.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
@@ -167,23 +286,47 @@
   <hr>
   <div class="row">
     <div class="col-md-4">
-      <h4>hvernig</h4>
+      <h5>hvernig</h5>
       <audio controls>
-          <source src="lt/hvernig.wav" type="audio/wav">
+          <source src="lt/T7_M/hvernig.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/hvernig.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/hvernig.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>hvað</h4>
+      <h5>hvað</h5>
       <audio controls>
-          <source src="lt/hvað.wav" type="audio/wav">
+          <source src="lt/T7_M/hvað.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/hvað.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/hvað.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>að</h4>
+      <h5>að</h5>
       <audio controls>
-          <source src="lt/að.wav" type="audio/wav">
+          <source src="lt/T7_M/að.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/að.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/að.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
@@ -191,23 +334,47 @@
   <hr>
   <div class="row">
     <div class="col-md-4">
-      <h4>á</h4>
+      <h5>á</h5>
       <audio controls>
-          <source src="lt/á.wav" type="audio/wav">
+          <source src="lt/T7_M/á.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/á.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/á.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>get</h4>
+      <h5>get</h5>
       <audio controls>
-          <source src="lt/get.wav" type="audio/wav">
+          <source src="lt/T7_M/get.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/get.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/get.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>þetta</h4>
+      <h5>þetta</h5>
       <audio controls>
-          <source src="lt/þetta.wav" type="audio/wav">
+          <source src="lt/T7_M/þetta.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/þetta.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/þetta.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
@@ -215,16 +382,32 @@
   <hr>
   <div class="row">
     <div class="col-md-4">
-      <h4>líkar</h4>
+      <h5>líkar</h5>
       <audio controls>
-          <source src="lt/líkar.wav" type="audio/wav">
+          <source src="lt/T7_M/líkar.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/líkar.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/líkar.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
     <div class="col-md-4">
-      <h4>líka</h4>
+      <h5>líka</h5>
       <audio controls>
-          <source src="lt/líka.wav" type="audio/wav">
+          <source src="lt/T7_M/líka.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T7_F/líka.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+          <source src="lt/T13/líka.wav" type="audio/wav">
           Your browser does not support the audio element.
       </audio>
     </div>
