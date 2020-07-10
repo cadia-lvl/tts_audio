@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Judy Fong, Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>LVL Rás 2 interview</title>
+
+        <link rel="canonical" href="https://cadia-lvl.github.io/tts_audio/interview.html">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body {
+        padding-top: 3.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="index.html">LVL TTS demos</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Current status</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="goal.html">Goal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="demo.html" aria-disabled="false">HLBS</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="interview.html">Radio interview<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main" class="container">
+  <div>
+    <h1>Síðdegisútvarpinu á Rás 2 interview (ÍS)</h1>
+    <p class="lead">This is a radio interview with Atli Thor of LVL about the speech synthesis work carried out at LVL.</p>
+  </div>
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-6">
+        <ul>
+            <li>Language: Icelandic</li>
+            <li>Name of show: Síðdegisútvarpið</li>
+	        <li>Station: Rás 2</li>
+	        <li><a href="https://www.ruv.is/utvarp/spila/siddegisutvarpid/23825/7h2hqm" title="link to the whole episode of the radio show">Date: 26. 06. 2020</a></li>
+	        <li>Air time: 16:30</li>
+	        <li>Interviewer: Guðmundur Pálsson</li>
+	        <li>Duration: approximately 10 minutes</li>
+	        <li>Topics discussed: The work carried out at LVL, specifically w.r.t. speech synthesis and speech data collection</li>
+	        <li><a href="https://www.ruv.is/utvarp/spila/siddegisutvarpid/23825/7h2hqm" title="link to the whole episode of the radio show">Link to the Radio episode</a></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+      <audio controls>
+          <source src="lt/interview/viðtal.mp3">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <div>
+    <h2>Transcript</h2>
+    <p>The transcript was transcribed by the ASR at <a href="https://tal.tiro.is" title="the Tiro ehf ASR platform">tal.tiro.is</a> with minor edits and diarization done by Judy.</p>
+    <div id="transcript"></div>
+  </div>
+
+  <hr>
+
+</main> <!-- /container -->
+
+
+<footer class="container">
+  <p>&copy; some people at LVL 2018-2020</p>
+  <p>This website uses bootstrap 4.5.</p>
+</footer>
+<script>
+  //thanks Saeed Mohtasham
+  //https://stackoverflow.com/questions/6348207/making-a-paragraph-in-html-contain-a-text-from-a-file
+  var txtFile = new XMLHttpRequest();
+  var allText = "file not found";
+  txtFile.onreadystatechange = function () {
+      if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
+          allText = txtFile.responseText;
+          allText = allText.split("\n").join("<br>");
+      }
+
+      document.getElementById('transcript').innerHTML = allText;
+  }
+  txtFile.open("GET", 'lt/interview/transcript-transcripts_2c491004-4856-48e3-9a4d-202eb1c368a7.txt' , true);
+  txtFile.send(null);
+</script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
+
